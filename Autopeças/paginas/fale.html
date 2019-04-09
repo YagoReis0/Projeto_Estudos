@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+  <title>REys - Fale Conosco</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../estilos/folha.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>     
+  <script src="../javascript/faleconosco.js"></script>
+    
+</head>
+
+<body>
+    
+<!--Barra de Navegação-->
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    
+        <a class="navbar-brand">
+            <img src="../imagens/auto.png" alt="logo" style="width:40px;">
+        </a>
+  
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../index.html" style="background-color: darkslategray" class="btn btn-info btn-lg">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white" href="produto.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white" href="fale.html">Fale Conosco</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white" href="trabalhe.html">Trabalhe Conosco</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white; padding-left: 20px" href="quemsomos.html">Quem Somos</a>
+            </li>
+        </ul>
+    </nav>
+    
+<!--Titulo-->
+    
+    <div class="jumbotron1">
+        <center><h1 class="display-3" style="font-family: sans-serif">Fale Conosco</h1></center>
+    </div>
+    
+<!--Fale-->
+    <fieldset class="falairmaozinho"><form>
+        <p id="msgfim"></p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nome Completo</span>
+            </div>
+            <input id="nome" type="text" class="form-control" placeholder="Nome">
+        </div>
+        <p id="1"></p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">E-mail</span>
+            </div>
+            <input id="mail" type="text" class="form-control" placeholder="exemplo@gmail.com">
+        </div>
+        <p id="2"></p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Estado</span>
+            </div>
+            <select id="selecao" type="text" class="form-control">
+                <option value="n/a">---Escolha---</option>
+                <option value="Acre">AC - Acre</option>
+                <option value="Alagoas">AL - Alagoas</option>
+                <option value="Amapá">AP - Amapá</option>
+                <option value="Amazonas">AM - Amazonas</option>
+                <option value="Bahia">BA - Bahia</option>
+                <option value="Ceará">CE - Ceará</option>
+                <option value="Distrito Federal">DF - Distrito Federal</option>
+                <option value="Espírito Santo">ES - Espírito Santo</option>
+                <option value="Goiás">GO - Goiás</option>
+                <option value="Maranhão">MA - Maranhão</option>
+                <option value="Mato Grosso">MT - Mato Grosso</option>
+                <option value="Mato Grosso do Sul">MS - Mato Grosso do Sul</option>
+                <option value="Minas Gerais">MG - Minas Gerais</option>
+                <option value="Pará">PA - Pará</option>
+                <option value="Paraíba">PB - Paraíba</option>
+                <option value="Paraná">PR - Paraná</option>
+                <option value="Pernambuco">PE - Pernambuco</option>
+                <option value="Piauí">PI - Piauí</option>
+                <option value="Rio de Janeiro">RJ - Rio de Janeiro</option>
+                <option value="Rio Grande do Norte">RN - Rio Grande do Norte</option>
+                <option value="Rio Grande do Sul">RS - Rio Grande do Sul</option>
+                <option value="Rondônia">RO - Rondônia</option>
+                <option value="Roraima">RR - Roraima</option>
+                <option value="Santa Catarina">SC - Santa Catarina</option>
+                <option value="São Paulo">SP - São Paulo</option>
+                <option value="Sergipe">SE - Sergipe</option>
+                <option value="Tocantins">TO - Tocantins</option>
+            </select>
+        </div>
+        <p id="3"></p>
+        <div class="input-group mb-3">
+                <span class="input-group-text">Comentário</span>
+            <textarea id="comentario" name="Comentario" placeholder="Opcional..." style="width: 100%; height: 30%"></textarea>
+        </div>
+        <div class="input-group mb-3">
+                <button style="position: absolute; right: 0%" id="comentar" type="button" class="btn btn-success" onclick="enviado()">Enviar</button>
+        </div>
+        <br><br>
+    </form></fieldset>
+    
+<!--Mapa + CopyRight-->    
+<div style="margin-bottom: 0%; background-color: gray" class="jumbotron jumbotron-fluid">
+  <div class="container">
+      <div class="copyright-text">
+          <center><h4 style="color: white">Nós Encontre</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d702.5536941036522!2d-43.94366163569933!3d-19.91653435429764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69757d0c73259%3A0xe2edd3520f638a7d!2sSenac+em+Belo+Horizonte!5e0!3m2!1spt-BR!2sbr!4v1530386450288" style="width: 100%; height: 450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <a><span class="fa fa-google-plus-official" style="font-size:36px"></span></a>
+          <a><span class="fa fa-instagram" style="font-size:36px"></span></a>
+          <a><span class="fa fa-twitter-square" style="font-size:36px"></span></a>
+          <a><span class="fa fa-facebook-square" style="font-size:36px"></span></a>
+          <p>CopyRight © 2018 Digital All Rights Reserved - Yago Reis</p>
+          </center>
+      </div>
+  </div>
+</div>
+</body>
+</html>

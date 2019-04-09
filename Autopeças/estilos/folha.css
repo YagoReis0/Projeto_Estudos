@@ -1,0 +1,23 @@
+li:hover{
+    background-color: grey;
+}
+.logincad{
+    position: absolute;
+    right: 30px;
+}
+.falairmaozinho{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.tabeela{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 7%;
+}
+.jumbotron1 {
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}

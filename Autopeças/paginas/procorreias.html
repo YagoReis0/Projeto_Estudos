@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+  <title>REys - Produtos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../estilos/folha.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <script src="../javascript/comprar3.js"></script>
+
+</head>
+
+<body>
+    
+<!--Barra de Navegação-->
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    
+        <a class="navbar-brand">
+            <img src="../imagens/auto.png" alt="logo" style="width:40px;">
+        </a>
+  
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../index.html" style="background-color: darkslategray" class="btn btn-info btn-lg">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white" href="produto.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white" href="fale.html">Fale Conosco</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white" href="trabalhe.html">Trabalhe Conosco</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white; padding-left: 20px" href="quemsomos.html">Quem Somos</a>
+            </li>
+        </ul>
+    </nav>
+<!--Titulo-->
+    
+    <div class="jumbotron1">
+        <center><h1 class="display-3" style="font-family: sans-serif">Correia</h1></center>
+    </div>    
+<!--Produto-->
+    <!--F1-->
+    <fieldset class="tabeela">
+        <center><img style="border: 3px solid black" src="../imagens/correia.jpg" class="rounded" width="400" height="400"></center>
+        <h3 style="text-align: center">Correias Dentada</h3>
+        <h4 style="color: red; text-align: center">Por R$ 190,00</h4>
+    <div class="card">
+      <div class="card-header">
+        <center><a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          --------Detalhes--------
+        </a></center>
+      </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li>Garantia de 2 meses</li>
+            </ul>
+        </div>
+      </div>
+        </div>
+<!--A Venda-->        
+ 
+    <center><form action="/action_page.php" onmousemove="pague()">
+        Meios de Pagamento: 
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio1" name="paga">
+            <label class="custom-control-label" for="customRadio1">Credito</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio2" name="paga">
+            <label class="custom-control-label" for="customRadio2">Debito</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio3" checked name="paga">
+            <label class="custom-control-label" for="customRadio2">Boleto</label>
+        </div>
+        <div class="input-group mb-3" style="padding-right: 35%; padding-left: 35%">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><div style="color: red"></div>Quantidade</span>
+            </div>
+            <input min="0" max="20" id="qnt" type="number" class="form-control" onclick="pague()">
+        </div>
+        <div class="input-group mb-3" style="padding-right: 35%; padding-left: 35%">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><div style="color: red"></div>Total a ser Pago: R$</span>
+            </div>
+            <input id="total" type="text" class="form-control" disabled>
+        </div>
+        <div class="input-group mb-3" style="padding-right: 15%;padding-left: 15%">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><div style="color: red">*</div>CPF</span>
+            </div>
+            <input maxlength=14 id="cpf" type="text" class="form-control" placeholder="xxx.xxx.xxx-xx/xxxxxxxxxxx">
+        </div>
+        <div class="input-group mb-3" style="padding-right: 15%;padding-left: 15%">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><div style="color: red">*</div>CEP</span>
+            </div>
+            <input maxlength="10" id="cep" type="text" class="form-control" placeholder="xxxxx-xxx">
+        </div>
+        <input class="btn btn-success" type="button" value="Comprar" onclick="comprar()">
+        <p id="msgfim"></p>
+    </form></center>
+        
+    </fieldset>
+<!--CopyRight-->    
+<div style="margin-bottom: 0%; background-color: gray" class="jumbotron jumbotron-fluid">
+  <div class="container">
+      <div class="copyright-text">
+          <center><a><span class="fa fa-google-plus-official" style="font-size:36px"></span></a>
+          <a><span class="fa fa-instagram" style="font-size:36px"></span></a>
+          <a><span class="fa fa-twitter-square" style="font-size:36px"></span></a>
+          <a><span class="fa fa-facebook-square" style="font-size:36px"></span></a>
+          <p>CopyRight © 2018 Digital All Rights Reserved - Yago Reis</p></center>
+      </div>
+  </div>
+</div>    
+</body>
+</html>
